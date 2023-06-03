@@ -23,8 +23,6 @@ public class App
 
     public static void main( String[] args ) throws InterruptedException, IOException
     {
-      //System.setProperty("webdriver.chrome.driver", "/Users/shubham/Documents/Softwares/chrome-driver/chromedriver");
-    
       System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         
         
@@ -37,7 +35,7 @@ public class App
         
         //driver.get("http://localhost:8084/contact.html");
        
-        driver.get("http://172.31.36.22:8081/contact.html");
+        driver.get("http://3.6.228.250:8081/contact.html");
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
         
         driver.findElement(By.id("inputName")).sendKeys("Shubham Singh Kushwah");
